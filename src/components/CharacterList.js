@@ -10,7 +10,7 @@ const CharacterList = ({ characters }) => {
       onClick={() => {}}
       style={{ border: "1px solid red" }}
     >
-      <Link to={`/character/${character.name}`}>
+      <Link to={`/characters/${character.id}`}>
         <h2>{character.name}</h2>
         <p>
           {character.species === null ? "Human" : character.species.name} from{" "}
