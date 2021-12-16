@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
+import CharacterList from "./components/CharacterList";
 
 const ALL_PEOPLE = gql`
   {
@@ -41,15 +42,7 @@ const App = () => {
       {loading ? (
         <p>Loading ...</p>
       ) : (
-        data.allPeople.people.map((character) => (
-          <div key={character.id}>
-            <h2>{character.name}</h2>
-            <p>
-              {character.species === null ? "Human" : character.species.name}{" "}
-              from {character.homeworld.name}
-            </p>
-          </div>
-        ))
+        <CharacterList characters={data?.allPeople.people} />
       )}
     </>
   );
