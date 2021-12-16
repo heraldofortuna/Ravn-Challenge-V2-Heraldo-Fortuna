@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CharacterList = ({ characters }) => {
   if (characters === null) return null;
@@ -9,11 +10,13 @@ const CharacterList = ({ characters }) => {
       onClick={() => {}}
       style={{ border: "1px solid red" }}
     >
-      <h2>{character.name}</h2>
-      <p>
-        {character.species === null ? "Human" : character.species.name} from{" "}
-        {character.homeworld.name}
-      </p>
+      <Link to={`/character/${character.name}`}>
+        <h2>{character.name}</h2>
+        <p>
+          {character.species === null ? "Human" : character.species.name} from{" "}
+          {character.homeworld.name}
+        </p>
+      </Link>
     </div>
   ));
 };
