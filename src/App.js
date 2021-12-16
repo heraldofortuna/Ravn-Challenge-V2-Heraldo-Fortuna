@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/App.css";
 import AllPeopleQuery from "./services/AllPeopleQuery";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Character from "./pages/Character";

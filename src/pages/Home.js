@@ -1,6 +1,7 @@
 import React from "react";
 import CharacterList from "../components/CharacterList";
 import AllPeopleQuery from "../services/AllPeopleQuery";
+import Header from "../components/Header";
 
 const Home = () => {
   const { loading, error, data } = AllPeopleQuery();
@@ -10,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>People of Stars Wars</h1>
+      <Header title={"People of Star Wars"} />
       {loading ? <p>Loading ...</p> : <CharacterList characters={people} />}
     </>
   );

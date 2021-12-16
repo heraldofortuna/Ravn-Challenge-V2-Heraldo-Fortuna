@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 const Character = ({ characters }) => {
   const id = useParams().id;
@@ -7,10 +8,7 @@ const Character = ({ characters }) => {
 
   return (
     <>
-      <h2>Character Details</h2>
-      <Link to={"/"}>
-        <p>Home</p>
-      </Link>
+      <Header title={character.name} canReturn />
       <h3>{character.name}</h3>
     </>
   );

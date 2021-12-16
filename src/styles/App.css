@@ -1,0 +1,11 @@
+* {
+  font-family: SF Pro Display;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
