@@ -4,7 +4,6 @@ import { Link, useParams } from "react-router-dom";
 const Character = ({ characters }) => {
   const id = useParams().id;
   const character = characters.find((character) => character.id === id);
-  console.log(id, character);
 
   return (
     <>
@@ -12,6 +11,7 @@ const Character = ({ characters }) => {
       <Link to={"/"}>
         <p>Home</p>
       </Link>
+      <h3>{character.name}</h3>
     </>
   );
 };
