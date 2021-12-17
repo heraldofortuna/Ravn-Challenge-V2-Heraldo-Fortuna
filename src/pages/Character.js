@@ -1,16 +1,18 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
+import CharacterDetails from "../components/CharacterDetails";
 
 const Character = ({ characters }) => {
   const id = useParams().id;
   const character = characters.find((character) => character.id === id);
-  console.log(character);
+
   return (
     <>
       <Header title={character.name} canReturn />
       <main>
         <div className="container">
+          <CharacterDetails title="General Information" details={character} />
           <h2>General Information</h2>
           <ul>
             <li>
