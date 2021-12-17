@@ -12,7 +12,11 @@ const Home = () => {
   return (
     <>
       <Header title={"People of Star Wars"} />
-      {loading ? <p>Loading ...</p> : <CharacterList characters={people} />}
+      <main>
+        <div className="container">
+          {loading ? <p>Loading ...</p> : <CharacterList characters={people} />}
+        </div>
+      </main>
     </>
   );
 };
