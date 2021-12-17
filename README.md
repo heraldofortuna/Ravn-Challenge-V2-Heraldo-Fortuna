@@ -93,6 +93,8 @@ https://www.figma.com/file/Ceoqa8DbrtyKoOBDR77ktm/Ravn-Code-Challenge?node-id=0%
 
 - Due to the design, I couldn't use the router hook so I assumed that I had to create conditionals regarding the screen width.
 
+- I didn't have time to implement the loading functionality for the first 5 characters. My apologies.
+
 [Go up](#ravn-star-wars-registry)
 
 ---
