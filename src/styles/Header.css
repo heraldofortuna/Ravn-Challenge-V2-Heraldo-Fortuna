@@ -31,6 +31,11 @@
   position: absolute;
   left: 0;
   cursor: pointer;
+  transition: 0.4s all;
+}
+
+.header__return:hover {
+  transform: translateX(-6px);
 }
 
 @media (min-width: 480px) {

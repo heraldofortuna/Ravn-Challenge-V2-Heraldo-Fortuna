@@ -25,8 +25,6 @@ h2 {
 
 @media (min-width: 480px) {
   .main__container {
-    border: 2px solid green;
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;

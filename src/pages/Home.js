@@ -19,10 +19,12 @@ const Home = () => {
     <>
       <Header
         title={
-          isLarge
+          loading
+            ? "People of Star Wars"
+            : isLarge
             ? "Ravn Star Wars Registry"
             : characterID === null
-            ? "People of Star Wars"
+            ? "People"
             : people.find((character) => character.id === characterID).name
         }
         canReturn={characterID !== null}
