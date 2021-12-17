@@ -1,11 +1,14 @@
 import React from "react";
+import AllPeopleQuery from "../services/AllPeopleQuery";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import CharacterDetails from "../components/CharacterDetails";
 
-const Character = ({ characters }) => {
+const Character = () => {
   const id = useParams().id;
-  const character = characters.find((character) => character.id === id);
+  const { data } = AllPeopleQuery();
+  const people = data?.allPeople.people;
+  const character = people.find((character) => character.id === id);
 
   return (
     <>
