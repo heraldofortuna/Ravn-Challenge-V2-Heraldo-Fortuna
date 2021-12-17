@@ -1,17 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CharacterCard from "./CharacterCard";
 
-const CharacterList = ({ characters }) => {
+const CharacterList = ({ characters, handleClick }) => {
   return characters.map((character) => (
-    <div key={character.id}>
-      <Link to={`/characters/${character.id}`}>
-        <CharacterCard
-          name={character.name}
-          specie={character.species}
-          homeworld={character.homeworld.name}
-        />
-      </Link>
+    <div key={character.id} onClick={() => handleClick(character.id)}>
+      <CharacterCard
+        name={character.name}
+        specie={character.species}
+        homeworld={character.homeworld.name}
+      />
     </div>
   ));
 };
