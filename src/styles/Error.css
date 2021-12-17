@@ -1,0 +1,12 @@
+.error {
+  padding: 16px 0;
+  /** Flexbox styles **/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.error__text {
+  color: var(--text-emphasis-color);
+}
