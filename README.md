@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Ravn Star Wars Registry
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Image](./src/assets/screenshot1.png)
 
-## Available Scripts
+> Screenshot - Home page - Mobile size
 
-In the project directory, you can run:
+![Project Image](./src/assets/screenshot2.png)
 
-### `npm start`
+> Screenshot - Home page - Mobile size
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Project Image](./src/assets/screenshot3.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Screenshot - Character page - Desktop size
 
-### `npm test`
+![Project Image](./src/assets/screenshot4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Screenshot - Character page - Desktop size
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Description](#description)
+- [How to use?](#how-to-use)
+- [References](#references)
+- [License](#license)
+- [Author](#author)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Description
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Web or mobile application that allows us to navigate the Star Wars GraphQL API. If we click on each of the characters' cards, we can see their detailed information.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Apollo Client
+- GraphQL
+- ReactJS
+- JavaScript
+- HTML
+- CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Go up](#ravn-star-wars-registry)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to use?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation:
 
-### Code Splitting
+Enter and run the following sentence in your console:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```html
+yarn install
+```
 
-### Analyzing the Bundle Size
+### Run the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Enter and run the following sentence in your console:
 
-### Making a Progressive Web App
+```html
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+to enter developer mode.
 
-### Advanced Configuration
+Finally, open [http://localhost:3000](http://localhost:3000) to see it in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### API References
 
-### Deployment
+```html
+https://swapi-graphql.netlify.app/.netlify/functions/index
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[Go up](#ravn-star-wars-registry)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## References
+
+```html
+https://www.figma.com/file/Ceoqa8DbrtyKoOBDR77ktm/Ravn-Code-Challenge?node-id=0%3A1
+```
+
+[Go up](#ravn-star-wars-registry)
+
+---
+
+## Comments
+
+- Is my first time using GraphQL, so probably, my Apollo Client implementation is very basic.
+
+- Due to the design, I couldn't use the router hook so I assumed that I had to create conditionals regarding the screen width.
+
+[Go up](#ravn-star-wars-registry)
+
+---
+
+## License
+
+MIT License
+
+Copyright (c) [2021] [Heraldo Fortuna]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+[Go up](#ravn-star-wars-registry)
+
+---
+
+## Author
+
+- Twitter - [@heraldofortuna](https://twitter.com/heraldofortuna)
+- GitHub - [heraldofortuna](https://github.com/heraldofortuna)
+- Linkedin - [heraldofortuna](https://www.linkedin.com/in/heraldo-fortuna/)
+
+[Go up](#ravn-star-wars-registry)
