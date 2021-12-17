@@ -4,7 +4,7 @@ import CharacterDetailsItem from "./CharacterDetailsItem";
 
 const CharacterDetails = ({ details }) => {
   const general = ["Eye Color", "Hair Color", "Skin Color", "Birth Year"];
-  console.log(details);
+
   return (
     typeof details !== "undefined" && (
       <div className="characterDetails">

@@ -13,9 +13,8 @@ const Home = () => {
   const [characterID, setCharacterID] = useState(null);
   const getCharacterDetails = (characterId) => setCharacterID(characterId);
   const getCharacterList = () => setCharacterID(null);
-  const isLarge = window.innerWidth > 480;
-  const screenWidth = useWindowWidth();
-  console.log(screenWidth);
+  const isLarge = useWindowWidth() > 480;
+
   return (
     <>
       <Header
@@ -35,13 +34,24 @@ const Home = () => {
             <Error />
           ) : loading ? (
             <Loading />
-          ) : (
+          ) : characterID === null ? (
             <CharacterList
               characters={people}
               handleClick={getCharacterDetails}
             />
-          )}
-          {characterID !== null && (
+          ) : isLarge ? (
+            <>
+              <CharacterList
+                characters={people}
+                handleClick={getCharacterDetails}
+              />
+              <CharacterDetails
+                details={people.find(
+                  (character) => character.id === characterID
+                )}
+              />
+            </>
+          ) : (
             <CharacterDetails
               details={people.find((character) => character.id === characterID)}
             />
