@@ -14,7 +14,7 @@ const Home = () => {
       <Header title={"People of Star Wars"} />
       <main>
         <div className="container">
-          {!error ? (
+          {error ? (
             <Error />
           ) : loading ? (
             <Loading />

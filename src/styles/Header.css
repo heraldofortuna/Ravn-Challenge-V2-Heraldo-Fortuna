@@ -1,6 +1,6 @@
 .header {
   height: 45px;
-  background-color: #121212;
+  background-color: var(--rvn-black-color);
 }
 
 .header__container {
@@ -14,7 +14,7 @@
 }
 
 .header__title {
-  color: #ffffff;
+  color: var(--white-color);
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -28,4 +28,10 @@
 .header__return {
   position: absolute;
   left: 0;
+}
+
+@media (min-width: 480px) {
+  .header {
+    height: 52px;
+  }
 }
