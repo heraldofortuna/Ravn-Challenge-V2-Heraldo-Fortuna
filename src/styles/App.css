@@ -1,5 +1,16 @@
+:root {
+  --rvn-black-color: #121212;
+  --text-dark-color: #333333;
+  --text-light-color: #828282;
+  --white-color: #ffffff;
+
+  --font-h2-default: normal normal bold 17px/20px SF Pro Display;
+  --font-p1-default: normal normal normal 14px/17px SF Pro Display;
+}
+
 * {
-  font-family: SF Pro Display;
+  font: var(--font-p1-default);
+  letter-spacing: 0.0125em;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,4 +19,9 @@
 .container {
   width: 95%;
   margin: 0 auto;
+}
+
+h2 {
+  color: var(--text-dark-color);
+  font: var(--font-h2-default);
 }

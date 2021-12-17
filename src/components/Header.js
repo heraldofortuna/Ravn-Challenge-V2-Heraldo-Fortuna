@@ -10,7 +10,7 @@ const Header = ({ title, canReturn = false }) => {
             <p>Back</p>
           </Link>
         )}
-        <h1 className="header__title">{title}</h1>
+        <h2 className="header__title">{title}</h2>
       </div>
     </header>
   );
