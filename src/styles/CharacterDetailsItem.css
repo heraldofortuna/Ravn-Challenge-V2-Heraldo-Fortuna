@@ -1,0 +1,13 @@
+.characterDetailsItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 14px 0;
+  /** Flexbox styles **/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.characterDetailsItem__title {
+  color: var(--text-light-color);
+}
