@@ -5,6 +5,8 @@
 
 .header__container {
   height: 100%;
+  width: 90%;
+  margin: 0 auto;
   position: relative;
   /** Flexbox styles **/
   display: flex;
@@ -28,10 +30,19 @@
 .header__return {
   position: absolute;
   left: 0;
+  cursor: pointer;
 }
 
 @media (min-width: 480px) {
   .header {
     height: 52px;
+  }
+
+  .header__container {
+    justify-content: flex-start;
+  }
+
+  .header__return {
+    display: none;
   }
 }

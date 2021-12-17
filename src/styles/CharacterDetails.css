@@ -1,5 +1,7 @@
 .characterDetails {
   border: 1px solid blue;
+
+  display: none;
 }
 
 .characterDetails__container {
@@ -14,6 +16,7 @@
 @media (min-width: 480px) {
   .characterDetails {
     width: 75%;
+    display: block;
   }
 
   .characterDetails__container {

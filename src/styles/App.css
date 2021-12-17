@@ -18,22 +18,12 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
 h2 {
   color: var(--text-dark-color);
   font: var(--font-h2-default);
 }
 
 @media (min-width: 480px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .main__container {
     border: 2px solid green;
 

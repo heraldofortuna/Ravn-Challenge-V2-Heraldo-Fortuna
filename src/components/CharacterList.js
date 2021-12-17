@@ -7,9 +7,8 @@ const CharacterList = ({ characters, handleClick }) => {
     <div className="characterList">
       <div className="characterList__container">
         {characters.map((character) => (
-          <div onClick={() => handleClick(character.id)}>
+          <div key={character.id} onClick={() => handleClick(character.id)}>
             <CharacterCard
-              key={character.id}
               name={character.name}
               specie={character.species}
               homeworld={character.homeworld.name}

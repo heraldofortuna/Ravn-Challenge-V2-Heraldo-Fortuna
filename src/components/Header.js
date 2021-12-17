@@ -4,7 +4,7 @@ import arrowBack from "../assets/arrow-back.svg";
 const Header = ({ title, canReturn = false, handleReturn }) => {
   return (
     <header className="header">
-      <div className="container header__container">
+      <div className="header__container">
         {canReturn && (
           <img
             className="header__return"

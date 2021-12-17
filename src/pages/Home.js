@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Error from "../components/Error";
 import Loading from "../components/Loading";
 import CharacterDetails from "../components/CharacterDetails";
+import useWindowWidth from "../services/getWindowWidth";
 
 const Home = () => {
   const { loading, error, data } = AllPeopleQuery();
@@ -12,13 +13,16 @@ const Home = () => {
   const [characterID, setCharacterID] = useState(null);
   const getCharacterDetails = (characterId) => setCharacterID(characterId);
   const getCharacterList = () => setCharacterID(null);
-  const width = window.innerWidth;
-
+  const isLarge = window.innerWidth > 480;
+  const screenWidth = useWindowWidth();
+  console.log(screenWidth);
   return (
     <>
       <Header
         title={
-          characterID === null
+          isLarge
+            ? "Ravn Star Wars Registry"
+            : characterID === null
             ? "People of Star Wars"
             : people.find((character) => character.id === characterID).name
         }
@@ -31,24 +35,13 @@ const Home = () => {
             <Error />
           ) : loading ? (
             <Loading />
-          ) : width > 480 ? (
-            <>
-              <CharacterList
-                characters={people}
-                handleClick={getCharacterDetails}
-              />
-              <CharacterDetails
-                details={people.find(
-                  (character) => character.id === characterID
-                )}
-              />
-            </>
-          ) : characterID === null ? (
+          ) : (
             <CharacterList
               characters={people}
               handleClick={getCharacterDetails}
             />
-          ) : (
+          )}
+          {characterID !== null && (
             <CharacterDetails
               details={people.find((character) => character.id === characterID)}
             />
