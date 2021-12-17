@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/Loading.css";
-import loader from "../assets/loader.svg";
+import Loader from "./Loader";
 
 const Loading = () => {
   return (
     <div className="loading">
-      <img src={loader} alt="Page loading icon" />
+      <Loader />
       <h2 className="loading__text">Loading</h2>
     </div>
   );

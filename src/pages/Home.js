@@ -34,7 +34,7 @@ const Home = () => {
         <div className="main__container">
           {error ? (
             <Error />
-          ) : loading ? (
+          ) : !loading ? (
             <Loading />
           ) : characterID === null ? (
             <CharacterList
