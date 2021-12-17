@@ -12,6 +12,7 @@ const Home = () => {
   const [characterID, setCharacterID] = useState(null);
   const getCharacterDetails = (characterId) => setCharacterID(characterId);
   const getCharacterList = () => setCharacterID(null);
+  const width = window.innerWidth;
 
   return (
     <>
@@ -25,11 +26,23 @@ const Home = () => {
         handleReturn={getCharacterList}
       />
       <main>
-        <div className="container">
+        <div className="main__container">
           {error ? (
             <Error />
           ) : loading ? (
             <Loading />
+          ) : width > 480 ? (
+            <>
+              <CharacterList
+                characters={people}
+                handleClick={getCharacterDetails}
+              />
+              <CharacterDetails
+                details={people.find(
+                  (character) => character.id === characterID
+                )}
+              />
+            </>
           ) : characterID === null ? (
             <CharacterList
               characters={people}

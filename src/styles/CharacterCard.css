@@ -1,5 +1,12 @@
 .card {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.card:hover {
+  opacity: 0.4;
+  border-bottom: 1px solid var(--rvn-black-color);
 }
 
 .card__container {
@@ -9,6 +16,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.card__arrow {
+  transition: 0.4s all;
+}
+
+.card:hover .card__arrow {
+  transform: translateX(-10px);
 }
 
 .card__content__description {

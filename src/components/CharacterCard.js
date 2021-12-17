@@ -12,7 +12,11 @@ const CharacterCard = ({ name, specie, homeworld }) => {
             {specie === null ? "Human" : specie.name} from {homeworld}
           </p>
         </div>
-        <img src={arrow} alt="Go to character details arrow icon" />
+        <img
+          className="card__arrow"
+          src={arrow}
+          alt="Go to character details arrow icon"
+        />
       </div>
     </div>
   );

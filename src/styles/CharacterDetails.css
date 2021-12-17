@@ -1,3 +1,22 @@
+.characterDetails {
+  border: 1px solid blue;
+}
+
+.characterDetails__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .characterDetailsTitle {
   padding: 32px 0 8px 0;
+}
+
+@media (min-width: 480px) {
+  .characterDetails {
+    width: 75%;
+  }
+
+  .characterDetails__container {
+    width: 75%;
+  }
 }
