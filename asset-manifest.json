@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ravn-challenge-v2-heraldo-fortuna/static/css/main.a2bd721b.css",
+    "main.js": "/ravn-challenge-v2-heraldo-fortuna/static/js/main.637aa4e9.js",
+    "static/media/arrow-back.svg": "/ravn-challenge-v2-heraldo-fortuna/static/media/arrow-back.bf51d44428c361d1195369ae60be8ba3.svg",
+    "index.html": "/ravn-challenge-v2-heraldo-fortuna/index.html",
+    "static/media/arrow.svg": "/ravn-challenge-v2-heraldo-fortuna/static/media/arrow.596309477979260f9ff69421ac6d9354.svg",
+    "main.a2bd721b.css.map": "/ravn-challenge-v2-heraldo-fortuna/static/css/main.a2bd721b.css.map",
+    "main.637aa4e9.js.map": "/ravn-challenge-v2-heraldo-fortuna/static/js/main.637aa4e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2bd721b.css",
+    "static/js/main.637aa4e9.js"
+  ]
+}
